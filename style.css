@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+}
+
+.greyBg {
+    background-color: rgb(46, 46, 46);
+    color: whitesmoke;
+}
+
+footer {
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid whitesmoke;
+}
+
+.aligncenter {
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 110px);
+    position: relative;
+}
+
+.frame {
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.75) inset;
+    min-width: 350px;
+    min-height: 400px;
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+}
+
+.horizontalLine {
+    width: 100px;
+    height: 10px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+.verticalLine {
+    width: 10px;
+    height: 280px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    bottom: 60px;
+    left: 65px;
+}
+
+.horizontalTopLine {
+    width: 120px;
+    height: 10px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 50px;
+    left: 65px;
+}
+
+.AngledLine {
+    width: 85px;
+    height: 10px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 80px;
+    left: 56px;
+    transform: rotate(-45deg);
+}
+
+.rope {
+    width: 5px;
+    height: 40px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 60px;
+    left: 175px;
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    border-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 100px;
+    left: 158px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.body {
+    width: 5px;
+    height: 80px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 140px;
+    left: 175px;
+}
+
+.arm1 {
+    width: 5px;
+    height: 35px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 140px;
+    left: 162px;
+    transform: rotate(45deg);
+}
+
+.arm2 {
+    width: 5px;
+    height: 35px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 140px;
+    left: 188px;
+    transform: rotate(-45deg);
+}
+
+.leg1 {
+    width: 5px;
+    height: 35px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 213px;
+    left: 162px;
+    transform: rotate(45deg);
+}
+
+.leg2 {
+    width: 5px;
+    height: 35px;
+    background-color: rgb(31, 31, 31);
+    position: absolute;
+    top: 213px;
+    left: 188px;
+    transform: rotate(-45deg);
+}
+
+.guess {
+    position: relative;
+    margin-top: 10px;
+    min-width: 350px;
+    height: 25px;
+}
+
+.inpt {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: rgb(31, 31, 31);
+    background-color: whitesmoke;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(31, 31, 31);
+    opacity: 1;
+    /* Firefox */
+}
+
+.Submit {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-right: 5px;
+    z-index: 1;
+    cursor: pointer;
+    color: rgb(31, 31, 31);
+    background-color: whitesmoke;
+}
+
+.wordcount {
+    margin-top: 10px;
+    height: 20px;
+    display: flex;
+}
+
+.word {
+    background-color: rgb(31, 31, 31);
+    max-width: 20px;
+    outline: none;
+    height: 100%;
+    margin-left: 5px;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    box-shadow: none;
+    cursor: unset;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+    user-select: none;
+}
+
+.word:nth-child(1) {
+    margin: 0;
+}
+
+.GameButtons {
+    margin-top: 10px;
+    min-width: 175px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    height: 100%;
+    width: 100%;
+    transition: ease-in 1s;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    color: rgb(31, 31, 31);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn.deactive {
+    transform: scale(0);
+    width: 0;
+}
+
+.restart,
+.hint {
+    transition-delay: 1s;
+}
+
+.lives {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: whitesmoke;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="greyBg aligncenter">
+        <h1>Hangman</h1>
+    </header>
+    <section class="main aligncenter">
+        <div class="lives">Lives Left: <span class="livesLeft">6</span></div>
+        <div class="frame aligncenter">
+            <div class="horizontalLine"></div>
+            <div class="verticalLine"></div>
+            <div class="horizontalTopLine"></div>
+            <div class="AngledLine"></div>
+            <div class="rope"></div>
+        </div>
+        <div class="guess">
+            <input type="text" required maxlength="1" placeholder="Enter a Letter!" class="inpt">
+            <button class="Submit">Submit!</button>
+        </div>
+        <div class="wordcount aligncenter">
+        </div>
+        <div class="GameButtons">
+            <button class="start btn">Start</button>
+            <button class="restart btn deactive">Restart</button>
+            <button class="hint btn deactive">Hint</button>
+        </div>
+    </section>
+    <footer class="greyBg aligncenter">
+        Terlan Cavadzade 2021
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
